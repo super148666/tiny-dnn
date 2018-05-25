@@ -1,0 +1,11 @@
+path_cones: 'training_data/basler32/1/'
+num_cones: 786
+path_non_cones: 'training_data/basler32/0/'
+num_non_cones: 3189
+image_width: 32
+image_height: 32
+process_scale: 1.0
+train_ratio: 0.9
+batch_size: 20
+epochs: 1000
+alpha: 0.05
