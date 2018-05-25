@@ -1,6 +1,7 @@
-path_cones: 'training_data/basler32/1/'
+absolute_path: true
+path_cones: '/media/chao/RAID1_L/chaoz/cone_detection_data/basler32/1/'
 num_cones: 786
-path_non_cones: 'training_data/basler32/0/'
+path_non_cones: '/media/chao/RAID1_L/chaoz/cone_detection_data/basler32/0/'
 num_non_cones: 3189
 image_width: 32
 image_height: 32

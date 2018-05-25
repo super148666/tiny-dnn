@@ -107,9 +107,16 @@ void Configure(ros::NodeHandle n) {
         ROS_ERROR("alpha is missing!");
         exit(0);
     }
-    std::string pkg_path = ros::package::getPath("vision")+"/";
-    pathCones.insert(0,pkg_path);
-    pathNonCones.insert(0,pkg_path);
+    bool absolute_path = true;
+    if(!n.getParam("/parser/absolute_path",absolute_path)) {
+        ROS_ERROR("absolute_path is missing!");
+        exit(0);
+    }
+    if(!absolute_path) {
+        std::string pkg_path = ros::package::getPath("vision")+"/";
+        pathCones.insert(0,pkg_path);
+        pathNonCones.insert(0,pkg_path);
+    }
     ROS_INFO("configure done");
 }
 
