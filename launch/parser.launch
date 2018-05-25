@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="tiny_cnn" type="dnn_parser" name="parser" output="screen">
+        <rosparam command="load" file="$(find tiny_cnn)/config/parser.yaml" />
+    </node>
+
+
+</launch>
